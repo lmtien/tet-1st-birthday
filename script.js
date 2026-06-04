@@ -2,7 +2,7 @@ const letters = {
   tet: {
     title: "Ba gửi Tết, nhân sinh nhật 1 tuổi",
     body: [
-      "Tết ơi,",
+      "Tết của ba,",
       "Một năm qua, con đến với nhà mình nhỏ xíu mà làm mọi thứ lớn lên. Ba học cách chăm con, học cách kiên nhẫn hơn, và học cách thấy hạnh phúc trong những điều rất bé: một cái nắm tay, một lần con cười, một đêm con ngủ ngon.",
       "Sinh nhật 1 tuổi của con, ba không mong con phải lớn thật nhanh. Ba chỉ mong con lớn trong bình an, được yêu thương, được tự do khám phá, và luôn biết rằng nhà mình là nơi con có thể quay về.",
       "Thương con rất nhiều."
@@ -11,7 +11,7 @@ const letters = {
   mom: {
     title: "Ba gửi mẹ của Tết",
     body: [
-      "Em ơi,",
+      "Vợ Cá Nục của anh,",
       "Sinh nhật năm nay của em đặc biệt hơn mọi năm, vì nó đi cùng năm đầu tiên em làm mẹ của Tết. Anh biết có những ngày rất mỏi, có những đêm rất dài, và có những điều em đã làm âm thầm mà không phải lúc nào anh cũng nói được lời cảm ơn.",
       "Cảm ơn em vì đã cùng anh đi qua năm đầu tiên của con. Cảm ơn em vì những chăm sóc, những lo lắng, những hy sinh, và cả những lúc em vẫn mỉm cười để nhà mình thấy nhẹ hơn.",
       "Chúc mừng sinh nhật em, và chúc mừng em tròn một năm làm mẹ."

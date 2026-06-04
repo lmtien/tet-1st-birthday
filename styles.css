@@ -84,10 +84,29 @@ select {
   animation: petalFall 16s linear infinite;
 }
 
-.p1 { left: 8%; top: -5%; animation-delay: 0s; }
-.p2 { left: 35%; top: -10%; animation-delay: 4s; }
-.p3 { left: 68%; top: -8%; animation-delay: 7s; }
-.p4 { left: 92%; top: -4%; animation-delay: 10s; }
+.p1 {
+  left: 8%;
+  top: -5%;
+  animation-delay: 0s;
+}
+
+.p2 {
+  left: 35%;
+  top: -10%;
+  animation-delay: 4s;
+}
+
+.p3 {
+  left: 68%;
+  top: -8%;
+  animation-delay: 7s;
+}
+
+.p4 {
+  left: 92%;
+  top: -4%;
+  animation-delay: 10s;
+}
 
 .lantern {
   position: absolute;
@@ -112,8 +131,14 @@ select {
   background: rgba(255, 231, 168, 0.45);
 }
 
-.l1 { left: clamp(12px, 4vw, 48px); }
-.l2 { right: clamp(12px, 4vw, 48px); animation-delay: 1s; }
+.l1 {
+  left: clamp(12px, 4vw, 48px);
+}
+
+.l2 {
+  right: clamp(12px, 4vw, 48px);
+  animation-delay: 1s;
+}
 
 .topbar {
   position: sticky;
@@ -251,7 +276,7 @@ h3 {
   margin-bottom: 8px;
 }
 
-.hero-copy > p:not(.eyebrow) {
+.hero-copy>p:not(.eyebrow) {
   max-width: 680px;
   color: var(--muted);
   font-size: clamp(1.08rem, 1.9vw, 1.42rem);
@@ -802,6 +827,7 @@ figcaption {
 }
 
 @media (max-width: 980px) {
+
   .hero,
   .wish-layout {
     grid-template-columns: 1fr;
@@ -869,4 +895,72 @@ figcaption {
     grid-column: auto;
     grid-row: auto;
   }
+}
+
+/* --- Name meaning section --- */
+.name-meaning {
+  display: grid;
+  place-items: center;
+  padding: clamp(48px, 8vw, 100px) clamp(18px, 5vw, 72px);
+}
+
+.name-card {
+  position: relative;
+  max-width: 640px;
+  padding: clamp(36px, 6vw, 72px) clamp(28px, 5vw, 56px);
+  text-align: center;
+  background: rgba(255, 248, 230, 0.04);
+  border: 1px solid rgba(255, 231, 168, 0.18);
+  border-radius: 24px;
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 231, 168, 0.12);
+}
+
+.name-card::before {
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  content: "";
+  border-radius: 24px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(232, 189, 101, 0.12), transparent 60%);
+}
+
+.name-glyph {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold), #f5d98a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 4px 24px rgba(232, 189, 101, 0.3));
+}
+
+.name-card h2 {
+  margin-bottom: 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  line-height: 1.2;
+  color: var(--gold-soft);
+}
+
+.name-card blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.name-card blockquote p {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.7;
+  text-align: left;
+}
+
+.name-card blockquote p+p {
+  margin-top: 16px;
 }
