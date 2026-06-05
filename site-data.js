@@ -93,14 +93,15 @@ window.siteData = {
     }
   ],
   wishBackend: {
-    provider: "local",
+    provider: "googleForms",
     formspreeEndpoint: "",
     googleForm: {
-      action: "",
+      action: "https://docs.google.com/forms/d/e/1FAIpQLSdTXFYOi9GQs_4v2sPyyEIlDmZyuNAl5BhFvuKZRLBfD--ewg/formResponse",
       fields: {
-        name: "",
-        to: "",
-        message: ""
+        name: "entry.1263276672",
+        to: "entry.1736632317",
+        message: "entry.357488867",
+        metadata: "entry.1698522310"
       }
     }
   }

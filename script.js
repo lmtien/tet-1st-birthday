@@ -221,6 +221,15 @@ async function submitWishToBackend(data) {
     if (fields.name) params.append(fields.name, data.get("name"));
     if (fields.to) params.append(fields.to, data.get("to"));
     if (fields.message) params.append(fields.message, data.get("message"));
+    if (fields.metadata) {
+      const meta = [
+        navigator.userAgent,
+        `${screen.width}x${screen.height}`,
+        Intl.DateTimeFormat().resolvedOptions().timeZone,
+        navigator.language
+      ].join(" | ");
+      params.append(fields.metadata, meta);
+    }
 
     await fetch(backend.googleForm.action, {
       method: "POST",
@@ -228,7 +237,7 @@ async function submitWishToBackend(data) {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: params
     });
-    return "Đã gửi vào Google Forms.";
+    return "Tết đã nhận được rồi nè! Cảm ơn nhiều lắm 🎉";
   }
 
   if (backend.provider === "netlify") {
