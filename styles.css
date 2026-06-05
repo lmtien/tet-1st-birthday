@@ -170,13 +170,10 @@ select {
 }
 
 .brand-mark {
-  display: grid;
   width: 38px;
   height: 38px;
-  place-items: center;
-  color: #5a0b12;
-  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
-  border: 1px solid rgba(255, 255, 255, 0.32);
+  object-fit: cover;
+  border: 2px solid rgba(255, 231, 168, 0.5);
   border-radius: 50%;
   box-shadow: 0 0 28px rgba(232, 189, 101, 0.28);
 }
@@ -494,6 +491,10 @@ h3 {
   height: 178px;
   margin-bottom: 18px;
   object-fit: cover;
+}
+
+.tet-card .person-photo {
+  object-position: top;
 }
 
 .photo-slot::before {

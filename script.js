@@ -103,10 +103,11 @@ function renderAlbum() {
   photoGrid.innerHTML = album
     .map((photo, index) => {
       const featureClass = index === 0 || index === 7 ? " large" : index === 4 || index === 11 ? " wide" : "";
+      const caption = photo.caption ? `<figcaption>${escapeHtml(photo.caption)}</figcaption>` : "";
       return `
         <figure class="memory-photo${featureClass}">
-          <img src="${escapeHtml(photo.src)}" alt="${escapeHtml(photo.caption)}" loading="lazy" />
-          <figcaption>${escapeHtml(photo.caption)}</figcaption>
+          <img src="${escapeHtml(photo.src)}" alt="${escapeHtml(photo.caption || 'Ảnh gia đình')}" loading="lazy" />
+          ${caption}
         </figure>
       `;
     })
