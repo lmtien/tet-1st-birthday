@@ -390,7 +390,8 @@ h3 {
 
 .stage-name {
   left: 8%;
-  top: 14%;
+  bottom: 8%;
+  top: auto;
   display: grid;
   width: 110px;
   height: 110px;
@@ -902,6 +903,9 @@ figcaption {
     width: 86px;
     height: 86px;
     font-size: 2.1rem;
+    top: auto;
+    bottom: 8%;
+    left: 8%;
   }
 
   .honoree-grid,

@@ -238,7 +238,7 @@ async function submitWishToBackend(data) {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: params
     });
-    return "Tết đã nhận được rồi nè! Cảm ơn nhiều lắm 🎉";
+    return "Tết nhận được lời chúc rồi ạ! Cảm ơn cô chú nhiều lắm ạ 🎉";
   }
 
   if (backend.provider === "netlify") {
